@@ -3,6 +3,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
@@ -10,6 +16,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   --radius: 0.65rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
@@ -27,7 +34,7 @@
   --accent-foreground: oklch(0.21 0.006 285.885);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
+  --input: oklch(0.606 0.25 292.717);
   --ring: oklch(0.606 0.25 292.717);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);

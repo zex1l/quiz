@@ -1,7 +1,9 @@
+import { ROUTES } from '@/shared/constants/routes';
 import { Button } from '@/shared/ui/button';
 import { CodeUi } from '@/shared/ui/code';
 import { motion } from 'framer-motion';
 import { Code } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const items = [
   {
@@ -59,7 +61,7 @@ export const Preview = () => {
               </motion.p>
             </div>
             <motion.div
-              className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4"
+              className="grid grid-cols-1  lg:grid-cols-3 gap-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
@@ -92,7 +94,7 @@ export const Preview = () => {
                 transition={{ delay: 1 }}
               >
                 <Button size={'lg'} className="mt-8">
-                  Начать
+                  <Link to={ROUTES.QUIZES_LIST}>Начать</Link>
                 </Button>
               </motion.div>
               <motion.div

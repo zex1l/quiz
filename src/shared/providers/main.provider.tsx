@@ -1,3 +1,5 @@
+import { ConvexProvider } from './convex.provider';
+
 export const MainProvider = ({ children }: { children: React.ReactNode }) => {
-  return <>{children}</>;
+  return <ConvexProvider>{children}</ConvexProvider>;
 };
