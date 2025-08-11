@@ -5,16 +5,9 @@ import { api } from 'convex/_generated/api';
 import type { Id } from 'convex/_generated/dataModel';
 import { MapAnswerForMutation } from '@/shared/utils/mappers';
 import { useEffect, useRef, useState } from 'react';
-import type { QuizType } from '../quiz.type';
 import { href, useNavigate } from 'react-router-dom';
 import { ROUTES, type AnswerPageParams } from '@/shared/constants/routes';
 import type { Step } from './use-step-quiz';
-
-type AnswerResponse = {
-  quiz: QuizType;
-  answers: Record<string, string>;
-  score: number;
-};
 
 export const useUploadAnswer = ({
   quizId,
