@@ -7,7 +7,7 @@ export const router = createHashRouter([
   {
     path: ROUTES.HOME,
     element: (
-      <div className="min-h-screen bg-gradient-to-br from-purple-50 to-purple-100">
+      <div className="min-h-screen overflow-x-hidden">
         <App />
       </div>
     ),

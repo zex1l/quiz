@@ -28,11 +28,11 @@ export const QuizCardItem = ({
     <AnimatePresence>
       {!markAsReady && (
         <motion.div
-          className="absolute min-h-[300px] h-full w-[calc(100%_-_20px)] max-w-xl bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl shadow-md p-3 lg:p-6 border border-primary overflow-hidden"
-          initial={{ opacity: 0, x: 100 + animationIndex * 10 }}
+          className="absolute min-h-[350px] h-full w-full max-w-xl bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl shadow-md p-3 lg:p-6 border border-primary overflow-hidden"
+          initial={{ opacity: 0, y: 100 + animationIndex }}
           animate={{
             opacity: 1,
-            x: 0 + animationIndex * 10 - 10,
+            y: 0 + animationIndex * 5,
             transition: { delay: animationIndex * 0.1 },
           }}
           exit={{
@@ -49,7 +49,7 @@ export const QuizCardItem = ({
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
           >
-            <h2 className="text-xl font-bold text-primary">{question}</h2>
+            <h2 className="text-lg font-bold text-primary">{question}</h2>
             <RadioGroup
               onValueChange={(value) => setAnswer(value)}
               className="flex flex-col gap-2"
