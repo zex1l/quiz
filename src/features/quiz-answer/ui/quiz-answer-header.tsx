@@ -66,7 +66,7 @@ export const QuizAnswerHeader = memo(
                   className="flex items-center gap-2"
                   onClick={() => copyClipboard(url)}
                 >
-                  <Copy className="text-muted-foreground" size={20} />
+                  <Copy className="text-muted-foreground min-w-[20px]" size={20} />
                   <div className=" bg-purple-200 text-primary font-mono text-sm px-3 py-1.5 rounded-lg text-ellipsis text-nowrap max-w-[400px] overflow-hidden">
                     {url}
                   </div>
